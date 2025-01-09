@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Tic Tac Toe Game</h1>
+
+
+    <!-- This is main_container of the game console -->
+    <div class="main_game_container_div">
+
+        <!-- This is first row of the game console -->
+        <div class="top_row_container_div">
+            <!-- This is individual box -->
+            <div class="game_box_common_container">
+                <button id="game_btn_1" class="game_box_btn" onclick="updateBtn(1)"></button>
+            </div>
+            <!-- This is individual box -->
+            <div class="game_box_common_container">
+                <button id="game_btn_2" class="game_box_btn" onclick="updateBtn(2)"></button>
+            </div>
+            <!-- This is individual box -->
+            <div class="game_box_common_container">
+                <button id="game_btn_3" class="game_box_btn" onclick="updateBtn(3)"></button>
+            </div>
+
+            <div id="straight_line_btn1_3" class="straight_line_div">
+                
+            </div>
+        </div>
+
+        <!-- This is middle row of the game console -->
+        <div class="middle_row_container_div">
+            <!-- This is individual box -->
+            <div class="game_box_common_container">
+                <button id="game_btn_4" class="game_box_btn" onclick="updateBtn(4)"></button>
+            </div>
+            <!-- This is individual box -->
+            <div class="game_box_common_container">
+                <button id="game_btn_5" class="game_box_btn" onclick="updateBtn(5)"></button>
+            </div>
+            <!-- This is individual box -->
+            <div class="game_box_common_container">
+                <button id="game_btn_6" class="game_box_btn" onclick="updateBtn(6)"></button>
+            </div>
+            <div id="straight_line_btn4_6" class="straight_line_div">
+                
+            </div>
+        </div>
+
+        <!-- This is last row of the game console -->
+        <div class="last_row_container_div">
+            <!-- This is individual box -->
+            <div class="game_box_common_container">
+                <button id="game_btn_7" class="game_box_btn" onclick="updateBtn(7)"></button>
+            </div>
+            <!-- This is individual box -->
+            <div class="game_box_common_container">
+                <button id="game_btn_8" class="game_box_btn" onclick="updateBtn(8)"></button>
+            </div>
+            <!-- This is individual box -->
+            <div class="game_box_common_container">
+                <button id="game_btn_9" class="game_box_btn" onclick="updateBtn(9)"></button>
+            </div>
+            <div id="straight_line_btn7_9" class="straight_line_div">
+                
+            </div>
+        </div>
+
+        
+        <div id="straight_line_btn_vr_1_7" class="straight_line_vr_div">
+                
+        </div>
+
+        <div id="straight_line_btn_vr_2_8" class="straight_line_vr_div">
+                
+        </div>
+
+        <div id="straight_line_btn_vr_3_9" class="straight_line_vr_div">
+                
+        </div>
+
+        <div id="straight_line_btn_di_1_9" class="straight_line_di_div">
+                
+        </div>
+
+        <div id="straight_line_btn_di_3_7" class="straight_line_di_div">
+                
+        </div>
+
+    </div>
+
+    <h1 id="winner_tag_container"></h1>
+
+    <button id="playAgainBtn" onclick="reload()"> Play Again</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
